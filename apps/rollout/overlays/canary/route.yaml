@@ -14,11 +14,11 @@ spec:
   to:
     kind: Service
     name: canary-stable
-    weight: 100
+    weight: 50
   alternateBackends:
     - kind: Service
       name: canary-canary
-      weight: 0
+      weight: 50
 ---
 apiVersion: route.openshift.io/v1
 kind: Route
